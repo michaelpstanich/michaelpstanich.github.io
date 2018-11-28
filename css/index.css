@@ -43,6 +43,9 @@ a:active{
 	text-decoration:none;
 	color:#000;
 }
+p{
+    margin: 0px 0px 10px 0px;
+}
 html{
 	padding:0px;
 	margin:0px;
@@ -573,7 +576,8 @@ body
     font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	font-weight: 600;
-	margin-top:5px;
+	margin-top:0px;
+    padding-bottom: 1px;
 }
 .gameVidCol{
     padding: 20px 10px 0px 10px;
@@ -587,6 +591,7 @@ body
 }
 .gimage{
     margin: auto;
+}
 }
 .gameBprojectpanic{
     background-color: #f00;

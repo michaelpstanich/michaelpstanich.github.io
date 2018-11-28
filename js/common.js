@@ -5,6 +5,8 @@ var vidTab = 0;
 var gameTab = 0;
 var gameload = 1;
 var bload = 1;
+var fadeintime = 100;
+var fadeouttime = 200;
 
 
 $.ajax({
@@ -57,7 +59,7 @@ $(function(){
 	
 	//Nav Animate
     $(".navLogo").mouseover(function(){
-		$(".navCLogo").stop().animate({backgroundColor: "#1e1e1e"},200);
+		$(".navCLogo").stop().animate({backgroundColor: "#1e1e1e"},100);
 	});
 	$(".navLogo").mouseout(function(){
 		$(".navCLogo").stop().animate({backgroundColor: "#fff"},200);
@@ -68,7 +70,7 @@ $(function(){
         }, 200);
     });
     $(".navVideo").mouseover(function(){
-		$(".navCVideo").stop().animate({backgroundColor: "#1e1e1e"},200);
+		$(".navCVideo").stop().animate({backgroundColor: "#00ccff"},100);
 	});
 	$(".navVideo").mouseout(function(){
 		$(".navCVideo").stop().animate({backgroundColor: "#fff"},200);
@@ -79,7 +81,7 @@ $(function(){
         }, 200);
     });
     $(".navGaming").mouseover(function(){
-		$(".navCGaming").stop().animate({backgroundColor: "#1e1e1e"},200);
+		$(".navCGaming").stop().animate({backgroundColor: "#ff0078"},100);
 	});
 	$(".navGaming").mouseout(function(){
 		$(".navCGaming").stop().animate({backgroundColor: "#fff"},200);
@@ -90,7 +92,7 @@ $(function(){
         }, 200);
     });
 	$(".navBlog").mouseover(function(){
-		$(".navCBlog").stop().animate({backgroundColor: "#1e1e1e"},200);
+		$(".navCBlog").stop().animate({backgroundColor: "#00c788"},100);
 	});
 	$(".navBlog").mouseout(function(){
 		$(".navCBlog").stop().animate({backgroundColor: "#fff"},200);
@@ -101,7 +103,7 @@ $(function(){
         }, 200);
     });
     $(".navResume").mouseover(function(){
-		$(".navCResume").stop().animate({backgroundColor: "#1e1e1e"},200);
+		$(".navCResume").stop().animate({backgroundColor: "#ff0078"},100);
 	});
 	$(".navResume").mouseout(function(){
 		$(".navCResume").stop().animate({backgroundColor: "#fff"},200);
@@ -111,38 +113,27 @@ $(function(){
             scrollTop: ($(".contentResume").offset().top -60)
         }, 200);
     });
-    $(".navAbout").mouseover(function(){
-		$(".navCAbout").stop().animate({backgroundColor: "#1e1e1e"},200);
-	});
-	$(".navAbout").mouseout(function(){
-		$(".navCAbout").stop().animate({backgroundColor: "#fff"},200);
-	});
-    $(".navAbout").click(function(){
-        $("html, body").animate({
-            scrollTop: ($(".contentAbout").offset().top -60)
-        }, 200);
-    });
     
     // Social Animate Color and Info
     $(".YouTubeSocIcon2").mouseover(function(){
-        $(".YouTubeSocIcon2").stop().fadeTo(200,1.0);
-        $(".YouTubeSocIcon").stop().fadeTo(200,0.0);
+        $(".YouTubeSocIcon2").stop().fadeTo(100,1.0);
+        $(".YouTubeSocIcon").stop().fadeTo(100,0.0);
     });
     $(".YouTubeSocIcon2").mouseout(function(){
         $(".YouTubeSocIcon2").stop().fadeTo(200,0.0);
         $(".YouTubeSocIcon").stop().fadeTo(200,1.0);
     });
     $(".DeviantArtSocIcon2").mouseover(function(){
-        $(".DeviantArtSocIcon2").stop().fadeTo(400,1.0);
-        $(".DeviantArtSocIcon").stop().fadeTo(400,0.0);
+        $(".DeviantArtSocIcon2").stop().fadeTo(100,1.0);
+        $(".DeviantArtSocIcon").stop().fadeTo(100,0.0);
     });
     $(".DeviantArtSocIcon2").mouseout(function(){
         $(".DeviantArtSocIcon2").stop().fadeTo(200,0.0);
         $(".DeviantArtSocIcon").stop().fadeTo(200,1.0);
     });
     $(".TwitterSocIcon2").mouseover(function(){
-        $(".TwitterSocIcon2").stop().fadeTo(400,1.0);
-        $(".TwitterSocIcon").stop().fadeTo(400,0.0);
+        $(".TwitterSocIcon2").stop().fadeTo(100,1.0);
+        $(".TwitterSocIcon").stop().fadeTo(100,0.0);
     });
     $(".TwitterSocIcon2").mouseout(function(){
         $(".TwitterSocIcon2").stop().fadeTo(200,0.0);
