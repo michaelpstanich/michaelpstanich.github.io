@@ -252,6 +252,16 @@ body
 	text-align:left;
     padding: 10px 100px 0px 100px;
 }
+.bcode{
+    display: block;
+    white-space:pre-wrap;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    color: #000;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 1px solid #1e1e1e;
+}
 .bimage{
     padding: 10px 0px 0px 0px;
     object-fit: scale-down;

@@ -59,7 +59,7 @@ $(function(){
 	
 	//Nav Animate
     $(".navLogo").mouseover(function(){
-		$(".navCLogo").stop().animate({backgroundColor: "#1e1e1e"},100);
+		$(".navCLogo").stop().animate({backgroundColor: "#ff7e00"},100);
 	});
 	$(".navLogo").mouseout(function(){
 		$(".navCLogo").stop().animate({backgroundColor: "#fff"},200);
