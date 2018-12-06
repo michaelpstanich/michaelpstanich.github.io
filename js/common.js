@@ -5,19 +5,24 @@ var vidTab = 0;
 var gameTab = 0;
 var gameload = 1;
 var bload = 1;
+var blogn = 0;
+var blogl = 0;
+var bloga = [" "]
 var fadeintime = 100;
 var fadeouttime = 200;
+var stringforblog = " "
 
 
 $.ajax({
     url : "blogindex.txt",
     dataType: "text",
     success : function (data) {
-    blogn = parseInt(data);
-    blogl = parseInt(data);
+    stringforblog = data
+    bloga = stringforblog.split("\n");
+    blogl = (bloga.length - 1);
     bload = 1
     $.ajax({
-        url : blogn+"-blogpost.html",
+        url : bloga[blogn],
         dataType: "html",
         success : function (data) {
             $(".bsec").html(data);
@@ -28,7 +33,7 @@ $.ajax({
 
 $(function(){
 	function adjust(){
-		windowWidth = $(window).width();
+		var windowWidth = $(window).width();
 		
         if(windowWidth < 460){
             //Hide Nav Buttons
@@ -380,7 +385,7 @@ $(function(){
         if (bload != 0){
         bload = 1
         $.ajax({
-            url : blogn+"-blogpost.html",
+            url : bloga[blogn],
             dataType: "html",
             success : function (data) {
                 $(".bsec").html(data);
@@ -389,10 +394,10 @@ $(function(){
         }
     });
     $(".bpostnext").click(function(){
-        if (blogn > 1){
-        blogn -= 1
+        if (blogn < blogl){
+        blogn += 1
         $.ajax({
-            url : blogn+"-blogpost.html",
+            url : bloga[blogn],
             dataType: "html",
             success : function (data) {
                 $(".bsec").html(data);
@@ -401,10 +406,10 @@ $(function(){
         }
     });
     $(".bpostlast").click(function(){
-        if (blogn < blogl){
-        blogn += 1
+        if (blogn > 0){
+        blogn -= 1
         $.ajax({
-            url : blogn+"-blogpost.html",
+            url : bloga[blogn],
             dataType: "html",
             success : function (data) {
                 $(".bsec").html(data);
@@ -413,7 +418,6 @@ $(function(){
         }
     });
     $(".bpostarchive").click(function(){
-        blogn = blogl + 1;
         $.ajax({
             url : "blogarchive.html",
             dataType: "html",
@@ -422,6 +426,20 @@ $(function(){
             }
         });
     });
+    
+    $('body').on('click','.barclink',function(){
+        event.preventDefault();
+        var addressvalue = $(this).attr("href");
+        blogn = -1
+        $.ajax({
+            url: addressvalue,
+            dataType: "html",
+            success: function (data) {
+                $(".bsec").html(data);
+            }
+        })
+    });
+    
     
     // Gaming
     $(".gameSectionX").ready(function(){

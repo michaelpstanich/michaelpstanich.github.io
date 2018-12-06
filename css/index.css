@@ -599,90 +599,12 @@ body
 .gameBmods{
     background-color: #1e1e1e;
 }
-.gimage{
-    margin: auto;
-}
-}
 .gameBprojectpanic{
     background-color: #f00;
     display: none;
 }
-.crystalgrimoireType{
-    width: 800px;
+.gimage{
     margin: auto;
-}
-.gameCrystalgrimoireBar{
-    background-color: #1e1e1e;
-}
-.gameCrystalgrimoireSection{
-    
-}
-.gameHeartsofgrimoireSection{
-    display: none;
-}
-.gameSuccubusheartSection{
-    display: none;
-}
-.gameProjectpanicSection{
-    display: none;
-}
-
-/* Featured */
-.featuredSection{
-    width: 1000px;
-    margin: auto;
-}
-.featuredTitle{
-    background-color:#fff;
-    margin: auto;
-	font-family: 'Open Sans', sans-serif;
-	font-size:20px;
-	font-weight: 600;
-    text-align: center;
-	padding-right:3px;
-}
-.featuredTitleBar{
-    background-color:#1e1e1e;
-	height:2px;
-	margin: 22px 0 -22px 0;
-}
-.featuredTags{
-    font-family: 'Open Sans', sans-serif;
-	font-size:12px;
-    font-style: italic;
-	font-weight: 400;
-    text-align: center;
-    margin: 0 0 10px 0;
-}
-.featuredImg{
-    width: 1000px;
-    margin:0 auto 0 auto;
-}
-.featuredSubImg{
-    width: 120px;
-    height: 120px;
-    float: left;
-    margin: 0 5px 0 5px;
-    border: 2px solid #1e1e1e;
-}
-.featuredSub2{
-    width: 269px;
-    margin: 10px auto 0 auto;
-}
-.featuredSub3{
-    width: 404px;
-    margin: 10px auto 0 auto;
-}
-.featuredSub4{
-    width: 536px;
-    margin: 10px auto 0 auto;
-}
-.featuredSplit{
-    height: 80px;
-}
-.featuredLightTheFairy{
-    width: 635px;
-    padding-left: 260px;
 }
 
 /* Resume */
