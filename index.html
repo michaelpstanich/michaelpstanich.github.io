@@ -8,7 +8,6 @@
 	<meta charset="utf-8"><!--Char lang-->
 	<link rel="icon" type="image/png" href="img/fav.png">
 
-	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -22,37 +21,31 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/lightbox.js"></script>
 	
-	<script src="js/common.js"></script>
+	<script src="js/jscript_mpssite_v4.js"></script>
 </head>
 
 <body>
-    <!-- Loading Overlay 
-    <div class="loadingCover">
-        <div class="loadingText">
-            <img class="loadingCat" src="img/LoadingCat_Sleeping.gif" /><br>Loading</div>
-    </div>-->
 	<!-- Nav -->
 	<div class="fullNavBar">
 		<div class="mainNavBar">
 			<div class="logoNavBox navLogo">
 				<img src="img/Mlogo.svg" class="navLogo"/><div class="navC navCLogo"></div>
 			</div>
-			<div class="mainNavBox navBlog">
-				Blog <div class="navC navCBlog"></div>
-			</div>
-			<div class="mainNavBox navResume">
-				Resume <div class="navC navCResume"></div>
+			<div class="mainNavBox navGaming">
+				Games <div class="navC navCGaming"></div>
+            </div>
+			<div class="mainNavBox navMods">
+				Mods <div class="navC navCMods"></div>
 			</div>
 		</div>
 		<div class="secNavBar">
+			<div class="secNavBox navBlog">
+				Blog <div class="navC navCBlog"></div>
+			</div>
 			<div class="secNavBox navVideo">
 				Video <div class="navC navCVideo"></div>
 			</div>
-			<div class="secNavBox navGaming">
-				Gaming <div class="navC navCGaming"></div>
-            </div>
 		</div>
         <div class="clearbar"></div>
 	</div>
@@ -147,29 +140,32 @@
     <div class="contentPage">
         <div class="vidTabSection">
             <div class="vidTabBox">
-                <div class="vidTab vidTlatest">Latest Video
-                <div class="vidTabC vidBlatest"></div></div>
+                <div class="vidTab vlatest">Latest Video
+                <div class="vidTabC vlatest"></div></div>
                 <div class="vidTabD"></div>
-                <div class="vidTab vidTimpressions">Impressions Review
-                <div class="vidTabC vidBimpressions"></div></div>
+                <div class="vidTab vimpressions">Impressions Review
+                <div class="vidTabC vimpressions"></div></div>
                 <div class="vidTabD"></div>
-                <div class="vidTab vidToverview">Overview
-                <div class="vidTabC vidBoverview"></div></div>
+                <div class="vidTab voverview">Overview
+                <div class="vidTabC voverview"></div></div>
                 <div class="vidTabD"></div>
-                <div class="vidTab vidTtopic">Topic
-                <div class="vidTabC vidBtopic"></div></div>
+                <div class="vidTab vtopic">Topic
+                <div class="vidTabC vtopic"></div></div>
                 <div class="vidTabD"></div>
-                <div class="vidTab vidTdesignview">Design View
-                <div class="vidTabC vidBdesignview"></div></div>
+                <div class="vidTab vdesignview">Design View
+                <div class="vidTabC vdesignview"></div></div>
                 <div class="vidTabD"></div>
-                <div class="vidTab vidTcheckout">Checkin' Out
-                <div class="vidTabC vidBcheckout"></div></div>
+                <div class="vidTab vcheckout">Checkin' Out
+                <div class="vidTabC vcheckout"></div></div>
                 <div class="vidTabD"></div>
-                <div class="vidTab vidTplay">Let's Play
-                <div class="vidTabC vidBplay"></div></div>
+                <div class="vidTab vplay">Let's Play
+                <div class="vidTabC vplay"></div></div>
                 <div class="vidTabD"></div>
-                <div class="vidTab vidTcolab">Collaborations
-                <div class="vidTabC vidBcolab"></div></div>
+                <div class="vidTab vstreams">Streams
+                <div class="vidTabC vstreams"></div></div>
+                <div class="vidTabD"></div>
+                <div class="vidTab vcolab">Collaborations
+                <div class="vidTabC vcolab"></div></div>
             </div>
         </div>
         <div class="clearbar"></div>
@@ -213,20 +209,20 @@
 </div>
     
 <!-- Gaming Content -->
-<div class="cheader cgaming">
+<div class="cheader cgames">
     <div class="cName">
-        Gaming
+        Games
     </div>
 </div>
-<div class="content contentGaming">
+<div class="content contentGames">
     <div class="contentPage">
         <div class="gameTabSection">
             <div class="gameTabBox">
-                <div class="gameTab gameTmods">Mods / Hacks
-                <div class="gameTabC gameBmods"></div></div>
+                <div class="gameTab gunreleased">[Unreleased Projects]
+                <div class="gameTabC gunreleased"></div></div>
                 <div class="gameTabD"></div>
-                <div class="gameTab gameTprojectpanic">Project Panic
-                <div class="gameTabC gameBprojectpanic"></div></div>
+                <div class="gameTab gprojectpanic">Project Panic
+                <div class="gameTabC gprojectpanic"></div></div>
             </div>
         </div>
         <div class="clearbar"></div>
@@ -239,186 +235,38 @@
 
 <div class="clearbar"></div>
 
-<!-- Resume -->
-<div class="content contentResume">
-    <div class="contentPage">
-    <div class="resumeContainer">
-        <div class="resumeTop">
-            <img src="img/Mlogo.svg" class="rLogo" />
-            <div class="nameText">Michael P. Stanich</div>
-            <div class="titleText">Graphic Designer / Illustrator</div>
-            <img src="img/resume/emailicon.svg" class="contactEmailI" />
-            <div class="contactEmailT">michaelpstanich@hotmail.com</div>
-            <img src="img/resume/webicon.svg" class="contactWebI" />
-            <div class="contactWebT">michaelpstanich.com</div>
-            <img src="img/resume/phoneicon.svg" class="contactPhoneI" />
-            <div class="contactPhoneT">509.590.9404</div>
-        </div>
-        <div class="clearbar"></div>
-        <div class="education">
-            <div class="rrTitle">Education</div>
-            <div class="rrBar"></div>
-            <div class="eduT">
-                <div class="eduT1">Spokane Falls Community College</div>
-                <div class="eduT2">Winter 2011 - 2014</div>
-            </div>
-            <div class="eduT_">
-                <div class="eduT1">SFCC Graphic Design Program</div>
-                <div class="eduT2">Fall 2012 - 2014</div>
-            </div>
-        </div>
-        <div class="clearbar"></div>
-        <div class="software">
-            <div class="rlTitle">Software</div>
-            <div class="rlBar"></div>
-            <div class="sB1">
-                <img src="img/resume/psicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Photoshop CC</div>
-                    <div class="sTsub">Digital Illustration / Painting</div>
-                    <div class="sTsub">Image Modification</div>
-                    <div class="sTsub">Print / Web Mock-up</div>
-                    <div class="sTsub">Sketching / Prep. Work</div>
-                </div>
-            </div>
-            <div class="sB">
-                <img src="img/resume/aiicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Illustrator CC</div>
-                    <div class="sTsub">Vector Illustration</div>
-                    <div class="sTsub">Vector Icon Creation</div>
-                    <div class="sTsub">Typography Work</div>
-                    <div class="sTsub">Print / Web Mock-up</div>
-                </div>
-            </div>
-            <div class="sB">
-                <img src="img/resume/aeicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">After Effects CC</div>
-                    <div class="sTsub">Motion Graphics</div>
-                    <div class="sTsub">Character / Object Animation</div>
-                    <div class="sTsub">Effects / Color Key</div>
-                    <div class="sTsub">UI / Web Demos</div>
-                </div>
-            </div>
-            <div class="sB">
-                <img src="img/resume/vsicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Visual Studio</div>
-                    <div class="sTsub">Compile Solutions</div>
-                    <div class="sTsub">Code C# / C++ Programs</div>
-                    <div class="sTsub">Debug C# / C++ Programs</div>
-                    <div class="sTsub">Prototype Development</div>
-                </div>
-            </div>
-        </div>
-        <div class="clearbar"></div>
-        <div class="skillset">
-            <div class="rrTitle">Skill Set</div>
-            <div class="rrBar"></div>
-            <div class="srB1">
-                <img src="img/resume/caticon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Illustration</div>
-                    <div class="sTsub">Character / Object</div>
-                    <div class="sTsub">Landscape / Architecture</div>
-                    <div class="sTsub">In-depth Concept Sketching</div>
-                    <div class="sTsub">Icon Creation</div>
-                </div>
-            </div>
-            <div class="srB">
-                <img src="img/resume/uxicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">UI / UX Design</div>
-                    <div class="sTsub">Web Layout</div>
-                    <div class="sTsub">Navigation</div>
-                    <div class="sTsub">Site Web / Flow</div>
-                    <div class="sTsub">Application Menu</div>
-                </div>
-            </div>
-            <div class="srB">
-                <img src="img/resume/codeicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Programming</div>
-                    <div class="sTsub">HTML5 / CSS 3 Coding</div>
-                    <div class="sTsub">Javascript Coding</div>
-                    <div class="sTsub">Responsive</div>
-                    <div class="sTsub">C# / C++ Experience</div>
-                </div>
-            </div>
-            <div class="srB">
-                <img src="img/resume/typeicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Typography</div>
-                    <div class="sTsub">Interactive Type</div>
-                    <div class="sTsub">Custom Hand Lettering</div>
-                    <div class="sTsub">Custom Digital Lettering</div>
-                    <div class="sTsub">Font Creation</div>
-                </div>
-            </div>
-            <div class="srB">
-                <img src="img/resume/videoicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Video Creation</div>
-                    <div class="sTsub">Motion Graphics / Animation</div>
-                    <div class="sTsub">Web / UI Preview Compiling</div>
-                    <div class="sTsub">Video Compile / Editing</div>
-                    <div class="sTsub">Level Adjustment / Foley</div>
-                </div>
-            </div>
-        </div>
-        <div class="clearbar"></div>
-        <div class="likes">
-            <div class="rlTitle">Likes / Hobbies</div>
-            <div class="rlBar"></div>
-            <div class="sB1">
-                <img src="img/resume/articon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Art</div>
-                    <div class="sTsub">Digital Art</div>
-                    <div class="sTsub">Illustration</div>
-                    <div class="sTsub">Concept Art</div>
-                    <div class="sTsub">Drawings / Paintings</div>
-                </div>
-            </div>
-            <div class="sB">
-                <img src="img/resume/designicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Graphic Design</div>
-                    <div class="sTsub">Typography</div>
-                    <div class="sTsub">Interactive Design</div>
-                    <div class="sTsub">Web Interaction</div>
-                    <div class="sTsub">Applied Illustration</div>
-                </div>
-            </div>
-            <div class="sB">
-                <img src="img/resume/gamingicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Video Games</div>
-                    <div class="sTsub">Action / Adventure</div>
-                    <div class="sTsub">RPG</div>
-                    <div class="sTsub">Puzzle / Strategy</div>
-                    <div class="sTsub">Team / Multiplayer</div>
-                </div>
-            </div>
-            <div class="sB">
-                <img src="img/resume/socialicon.svg" class="sI" />
-                <div class="sT">
-                    <div class="sTtitle">Socializing</div>
-                    <div class="sTsub">Constructive Conversation</div>
-                    <div class="sTsub">Critics of Work</div>
-                    <div class="sTsub">Talking / Having Fun</div>
-                    <div class="sTsub">Meeting New People</div>
-                </div>
-            </div>
-        </div>
-        <div class="clearbar"></div>
-        <div class="rrEndBar"></div>
-        <div class="endSpace"></div>
-        <div class="clearbar"></div>   
-    </div>
+<!-- Mods / Hacks -->
+
+<div class="cheader cmods">
+    <div class="cName">
+        Mods
     </div>
 </div>
+<div class="content contentMods">
+    <div class="contentPage">
+        <div class="modTabSection">
+            <div class="modTabBox">
+                <div class="modTab mfeatured">Featured
+                <div class="modTabC mfeatured"></div></div>
+                <div class="modTabD"></div>
+                <div class="modTab mmodslist">Mods List
+                <div class="modTabC mmodslist"></div></div>
+                <div class="modTabD"></div>
+                <div class="modTab mhackslist">Hacks List
+                <div class="modTabC mhackslist"></div></div>
+            </div>
+        </div>
+        <div class="clearbar"></div>
+        <div class="modSectionX">
+        <!-- Import HTML -->
+		<div class="clearbar"></div>
+        </div>
+    </div>
+</div>
+
+<div class="clearbar"></div>
+    
+<!-- End Notes -->
     <div class="endtext">Website Designed and Build by Michael Phillip Stanich - michaelpstanich.com</div>
 </body>
 	
