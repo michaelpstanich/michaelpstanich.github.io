@@ -197,7 +197,7 @@ $(function(){
     });
     
     // Games
-    var activeGameTab = "vunreleased"
+    var activeGameTab = "gunreleased"
     var hoveredGameTab = ""
 
     function gameTabHighlights(){
